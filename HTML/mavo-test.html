@@ -5,8 +5,32 @@
 		<script src="https://get.mavo.io/mavo.js"></script>
 	</head>
 	<body>
-		<div mv-app id="mavoTest">
+		<div mv-app="storageTest" mv-storage="local" id="mavoTest">
 			My first Mavo app!
+		</div>
+		<div mv-app="form-stuff" mv-storage="local" mv-autosave="0">
+			<label>
+				Email:
+				<input type="email" property="email" placeholder="foo@example.com" />
+			</label>
+			<label>
+				Message:
+				<textarea property="message">
+					Edit the form and notice how the values persist after you refresh!
+				</textarea>
+			</label>
+		</div>
+		<div mv-app="radio-buttons" mv-storage="local" mv-autosave="0">
+			<div property="radio" mv-multiple mv-order="desc">
+				<input type="radio" id="[label]" name="[label]" value="[label]" property="radio">
+				<label for="[label]" property="label">Email</label>
+			</div>
+		</div>
+		<div mv-app="checkboxes" mv-storage="local" mv-autosave="0">
+			<div property="checkbox" mv-multiple>
+				<input type="checkbox" id="[checklabel]" name="[checklabel]" value="[checklabel]">
+				<label for="[checklabel]" property="checklabel">Checkbox Name</label>
+			</div>
 		</div>
 	</body>
 </html>

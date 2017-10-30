@@ -16,10 +16,32 @@
 			</label>
 			<label>
 				Message:
-				<textarea property="message">
-					Edit the form and notice how the values persist after you refresh!
-				</textarea>
+				<textarea property="message">Edit the form and notice how the values persist after you refresh!</textarea>
 			</label>
+			<div value="[contactChoice]">
+			    <input type="radio" id="contactChoice1" name="contact" value="email" property="email">
+			    <label for="contactChoice1">Email</label>
+
+			    <input type="radio" id="contactChoice2" name="contact" value="phone" property="phone">
+			    <label for="contactChoice2">Phone</label>
+
+			    <input type="radio" id="contactChoice3" name="contact" value="mail" property="mail">
+			    <label for="contactChoice3">Mail</label>
+
+			    <input type="radio" id="contactChoice3" name="contact" value="courier" property="courier">
+			    <label for="contactChoice3">Courier</label>
+			</div>
+			<fieldset property="checkboxes">
+				<legend>Choose your interests</legend>
+				<div>
+			    	<input type="checkbox" id="coding" name="interest" value="coding" property="coding">
+			    	<label for="coding">Coding</label>
+				</div>
+				<div>
+			    	<input type="checkbox" id="music" name="interest" value="music" property="music">
+			    	<label for="music">Music</label>
+				</div>
+			</fieldset>
 		</div>
 		<div mv-app="radio-buttons" mv-storage="local" mv-autosave="0">
 			<div property="radio" mv-multiple mv-order="desc">

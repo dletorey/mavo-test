@@ -1,0 +1,52 @@
+/** styles.css **/
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+}
+
+header {
+    background-color: red;
+    color: white;
+    padding: 1em;
+    height: 210px;
+}
+
+header img {
+    border-radius: 50%;
+    border: 2px;
+    border-color: white;
+    float: left;
+}
+
+header h1 {
+    font-size: 4em;
+    position: fixed;
+    padding-left: 210px;
+}
+
+h2, h3, h4 {
+    color: red;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+footer {
+    background-color: red;
+    color: white;
+    padding: 1em;
+}
+
+footer ul.links {
+    list-style: none;
+    text-align: center;
+}
+
+footer ul.links > li {
+    display: inline-block;
+}
+
+footer ul li a {
+    color: white;
+}
